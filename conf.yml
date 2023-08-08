@@ -1,0 +1,6 @@
+---
+login:
+  # Enter your login info here. You cannot use an API key from UptimeKuma
+  username: your username here
+  password: your password here
+url: your login here # ex https://status.domain make sure not to have a trailing /
