@@ -1,3 +1,6 @@
+# Created by Noah Liby
+# v1.0 8/9/2023
+
 from uptime_kuma_api import UptimeKumaApi, MonitorType, IncidentStyle
 import json, textwrap, argparse, os, yaml
 
