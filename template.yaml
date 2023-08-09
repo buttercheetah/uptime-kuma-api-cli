@@ -1,0 +1,20 @@
+
+# Options for style:
+# INFO,WARNING,DANGER,PRIMARY,LIGHT,DARK
+
+small_power: 
+  title: "Current Power Outage Status: Continued Access via Backup Battery Systems"
+  desc: We are currently undergoing a power outage. Our systems remain accessible using backup batteries for the time being.
+  style: WARNING
+medium_power: 
+  title: "Update on Power Outage: Potential Impact on Service Availability"
+  desc: The duration of the power outage has exceeded initial projections. While our systems continue to rely on backup battery reserves, should this situation persist, there is a possibility of gradual service failure.
+  style: WARNING
+large_power:
+  title: "Extended Outage: Servers Entering Shutdown - Stay Tuned for Updates"
+  desc: The duration of the power outage has significantly surpassed our initial estimations. Consequently, our servers have initiated the shutdown process. We kindly advise revisiting for further updates on our services.
+  style: DANGER
+power_returned:
+  title: 'Power Restored: Appreciating Your Patience as Our Servers Restart'
+  desc: Our servers have now regained power. Your patience is greatly appreciated as they undergo the startup process.
+  style: INFO
