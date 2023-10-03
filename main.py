@@ -32,6 +32,7 @@ with open(args.config_file) as f:
 
 def ClearIncident(slug):
     with UptimeKumaApi(config['url']) as api:
+        api.timeout = 30
         api.login(config['login']['username'], config['login']['password'])
         statuspagecurrent = api.get_status_page(slug)
         if statuspagecurrent['incident'] == None:
@@ -42,6 +43,7 @@ def ClearIncident(slug):
 
 def GetStatusPages():
     with UptimeKumaApi(config['url']) as api:
+        api.timeout = 30
         api.login(config['login']['username'], config['login']['password'])
         return api.get_status_pages()
 
